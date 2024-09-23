@@ -35,7 +35,7 @@ const App = () => {
       <table>
         <thead>
           <tr>
-            <th >Id</th>
+            <th>Id</th>
             <th>Name</th>
             <th>Email</th>
             <th>Role</th>
@@ -54,7 +54,7 @@ const App = () => {
       </table>
       <div className="pagination">
         <button onClick={prevPage} disabled={currentPage === 1}>Previous</button>
-        <span>{currentPage}</span>
+        <span>Page {currentPage}</span>
         <button onClick={nextPage} disabled={currentPage === Math.ceil(data.length / rowsPerPage)}>Next</button>
       </div>
     </div>
