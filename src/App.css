@@ -1,41 +1,42 @@
-.App {
-  font-family: Arial, sans-serif;
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
 }
 
-table {
-  margin: 20px auto;
-  border-collapse: collapse;
-  width: 80%;
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
 }
 
-th, td {
-  border: 1px solid #ddd;
-  padding: 8px;
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
-th {
-  background-color: #f2f2f2;
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
 }
 
-.pagination {
-  margin: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.card {
+  padding: 2em;
 }
 
-button {
-  padding: 10px 20px;
-  margin: 0 5px;
-  cursor: pointer;
-}
-
-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.5;
-}
-
-.pagination span {
-  margin: 0 10px;
+.read-the-docs {
+  color: #888;
 }
